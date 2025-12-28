@@ -1,26 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SOOM</title>
   <style>
-    body { font-family: system-ui, sans-serif; margin: 40px; }
-    h1 { margin-bottom: 10px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 20px; }
-    a.card { display:block; padding:16px; border:1px solid #ddd; border-radius:12px; text-decoration:none; color:#111; }
-    a.card:hover { border-color:#999; }
+    body { font-family: system-ui, sans-serif; margin: 40px; line-height: 1.6; }
+    h1 { margin-bottom: 8px; }
+    .grid { display: grid; gap: 12px; max-width: 520px; margin-top: 20px; }
+    a.card {
+      display: block; padding: 14px 16px; border: 1px solid #ddd; border-radius: 12px;
+      text-decoration: none; color: inherit;
+    }
+    a.card:hover { border-color: #999; }
+    small { color: #666; }
   </style>
 </head>
 <body>
   <h1>SOOM</h1>
-  <p>Choose a category:</p>
+  <small>art · novel · poetry · theatre</small>
 
   <div class="grid">
-    <a class="card" href="art.html" target="_blank" rel="noopener">Art</a>
-    <a class="card" href="novel.html" target="_blank" rel="noopener">Novel</a>
-    <a class="card" href="poetry.html" target="_blank" rel="noopener">Poetry</a>
-    <a class="card" href="theatre.html" target="_blank" rel="noopener">Theatre</a>
+    <a class="card" href="./art/" target="_blank" rel="noopener">Art →</a>
+    <a class="card" href="./novel/" target="_blank" rel="noopener">Novel →</a>
+    <a class="card" href="./poetry/" target="_blank" rel="noopener">Poetry →</a>
+    <a class="card" href="./theatre/" target="_blank" rel="noopener">Theatre →</a>
   </div>
 </body>
 </html>
